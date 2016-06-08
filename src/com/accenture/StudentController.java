@@ -24,6 +24,6 @@ public class StudentController {
     
     @RequestMapping("/")
     public String home(ModelMap map) {
-            return "student";
+            return "hello";
     }
 }
