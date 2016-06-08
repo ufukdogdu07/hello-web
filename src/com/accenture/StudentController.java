@@ -21,9 +21,10 @@ public class StudentController {
         model.addAttribute("id", student.getId());
         return "result";
     }
-    
+
     @RequestMapping("/")
     public String home(ModelMap map) {
-            return "hello";
+        map.addAttribute("message", "Merhaba");
+        return "hello";
     }
 }
