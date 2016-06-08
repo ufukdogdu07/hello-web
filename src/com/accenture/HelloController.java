@@ -7,12 +7,20 @@ import org.springframework.ui.ModelMap;
 
 @Controller
 @RequestMapping("/hello")
-public class HelloController{
- 
-   @RequestMapping(method = RequestMethod.GET)
-   public String printHello(ModelMap model) {
-      model.addAttribute("message", "Merhaba");
-      return "hello";
-   }
+public class HelloController {
+    @RequestMapping(method = RequestMethod.GET)
+    public String printHello(ModelMap model) {
+        model.addAttribute("message", "Merhaba");
+        return "hello";
+    }
 
+    @RequestMapping(value = "/redirect", method = RequestMethod.GET)
+    public String redirect() {
+        return "redirect:studentPage";
+    }
+
+    @RequestMapping(value = "/studentPage", method = RequestMethod.GET)
+    public String finalPage() {
+        return "student";
+    }
 }
