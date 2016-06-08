@@ -31,13 +31,7 @@ public class StudentController {
     @RequestMapping(value = "/redirect", method = RequestMethod.GET)
     public String redirect() {
       
-       return "redirect:finalPage";
-    }
-    
-    @RequestMapping(value = "/finalPage", method = RequestMethod.GET)
-    public String finalPage() {
-      
-       return "student";
+       return "redirect:student";
     }
 
 }
