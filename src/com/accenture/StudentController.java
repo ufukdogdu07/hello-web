@@ -27,11 +27,4 @@ public class StudentController {
         map.addAttribute("message", "Merhaba");
         return "hello";
     }
-    
-    @RequestMapping(value = "/redirect", method = RequestMethod.GET)
-    public String redirect() {
-      
-       return "redirect:student";
-    }
-
 }
