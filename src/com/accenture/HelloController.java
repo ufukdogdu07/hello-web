@@ -18,9 +18,10 @@ public class HelloController {
     public String redirect() {
         return "redirect:studentPage";
     }
-
-    @RequestMapping(value = "/studentPage", method = RequestMethod.GET)
-    public String finalPage() {
-        return "student";
+    
+    @RequestMapping("/")
+    public String home(ModelMap map) {
+        map.addAttribute("message", "Merhaba");
+        return "hello";
     }
 }
