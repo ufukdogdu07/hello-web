@@ -5,24 +5,19 @@
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
 <project name="HelloWeb" default="war">
-
 	<path id="compile.classpath">
 		<fileset dir="WebContent/WEB-INF/lib">
 			<include name="*.jar"/>
 		</fileset>
 	</path>
-	
 	<target name="init">
 		<mkdir dir="build/classes"/>
-		<mkdir dir="dist" />
 	</target>
-	
 	<target name="compile" depends="init" >
 		<javac destdir="build/classes" debug="true" srcdir="src">
 			<classpath refid="compile.classpath"/>
 		</javac>
 	</target>
-	
 	<target name="war" depends="compile">
 		<war destfile="HelloWeb.war" webxml="WebContent/WEB-INF/web.xml">
 			<fileset dir="WebContent"/>
@@ -30,10 +25,4 @@
 			<classes dir="build/classes"/>
 		</war>
 	</target>
-	
-	<target name="clean">
-		<delete dir="dist" />
-		<delete dir="build" />
-	</target>
-	
 </project>
