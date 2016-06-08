@@ -13,10 +13,4 @@ public class HelloController {
         model.addAttribute("message", "Merhaba");
         return "hello";
     }
-    
-    @RequestMapping("/")
-    public String home(ModelMap map) {
-        map.addAttribute("message", "Merhaba");
-        return "hello";
-    }
 }
