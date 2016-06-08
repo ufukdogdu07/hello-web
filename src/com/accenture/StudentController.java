@@ -1,5 +1,7 @@
 package com.accenture;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,5 +22,11 @@ public class StudentController {
         model.addAttribute("age", student.getAge());
         model.addAttribute("id", student.getId());
         return "result";
+    }
+    
+    @RequestMapping("*")
+    public String hello(HttpServletRequest request) {
+        System.out.println(request.getServletPath());
+        return "hello";
     }
 }
