@@ -5,11 +5,6 @@
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
 <project name="HelloWeb" default="war">
-	<path id="compile.classpath">
-		<fileset dir="WebContent/WEB-INF/lib">
-			<include name="*.jar"/>
-		</fileset>
-	</path>
 	<target name="init">
 		<mkdir dir="build/classes"/>
 	</target>
