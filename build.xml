@@ -6,11 +6,9 @@
               as the first entry and export the buildfile again. -->
 <project name="HelloWeb" default="war">
 	<target name="init">
-		<mkdir dir="build/classes"/>
 	</target>
 	<target name="compile" depends="init" >
 		<javac destdir="build/classes" debug="true" srcdir="src">
-			<classpath refid="compile.classpath"/>
 		</javac>
 	</target>
 	<target name="war" depends="compile">
