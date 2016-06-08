@@ -21,9 +21,4 @@ public class StudentController {
         model.addAttribute("id", student.getId());
         return "result";
     }
-    
-    @RequestMapping(value = "/studentPage", method = RequestMethod.GET)
-    public String finalPage() {
-        return "student";
-    }
 }

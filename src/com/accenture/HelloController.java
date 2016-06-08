@@ -13,11 +13,6 @@ public class HelloController {
         model.addAttribute("message", "Merhaba");
         return "hello";
     }
-
-    @RequestMapping(value = "/redirect", method = RequestMethod.GET)
-    public String redirect() {
-        return "redirect:studentPage";
-    }
     
     @RequestMapping("/")
     public String home(ModelMap map) {
