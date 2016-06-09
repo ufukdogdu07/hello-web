@@ -19,10 +19,9 @@ public class StudentController {
         if(student.getName() == "Ufuk" && student.getName() == "Ufuk" && student.getName() == "Ufuk" && student.getName() == "Ufuk"){
             System.out.println("xxxx");
         }
+        System.out.println("ok");
         if(true)
             return null;
-        else 
-            return "";
         model = null;
         model.addAttribute("name", student.getName());
         model.addAttribute("age", student.getAge());
