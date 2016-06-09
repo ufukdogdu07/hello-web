@@ -17,8 +17,10 @@ public class StudentController {
     @RequestMapping(value = "/addStudent", method = RequestMethod.POST)
     public String addStudent(@ModelAttribute("HelloWeb") Student student, ModelMap model) {
         model.addAttribute("name", student.getName());
+        model.addAttribute("surname", student.getSurname());
         model.addAttribute("age", student.getAge());
         model.addAttribute("id", student.getId());
+        System.out.println("Ufuk");
         return "result";
     }
     

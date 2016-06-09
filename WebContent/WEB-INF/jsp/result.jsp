@@ -12,6 +12,10 @@
         <td>${name}</td>
     </tr>
     <tr>
+        <td>SurName</td>
+        <td>${surname}</td>
+    </tr>
+    <tr>
         <td>Age</td>
         <td>${age}</td>
     </tr>
