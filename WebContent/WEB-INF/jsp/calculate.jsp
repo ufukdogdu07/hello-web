@@ -18,7 +18,7 @@
     </tr>
     <tr>
         <td colspan="2">
-            <input type="submit" value="Kaydet"/>
+            <input type="submit" value="Topla"/>
         </td>
     </tr>
 </table>  
