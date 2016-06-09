@@ -16,9 +16,10 @@ public class StudentController {
 
     @RequestMapping(value = "/addStudent", method = RequestMethod.POST)
     public String addStudent(@ModelAttribute("HelloWeb") Student student, ModelMap model) {
-        if(student.getName() == "Ufuk " && student.getName() == "Ufuk" && student.getName() == "Ufuk" && student.getName() == "Ufuk"){
+        if(student.getName() == "Ufuk" && student.getName() == "Ufuk" && student.getName() == "Ufuk" && student.getName() == "Ufuk"){
             System.out.println("xxxx");
         }
+        model = null;
         model.addAttribute("name", student.getName());
         model.addAttribute("age", student.getAge());
         model.addAttribute("id", student.getId());
