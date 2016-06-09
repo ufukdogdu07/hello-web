@@ -16,14 +16,6 @@ public class StudentController {
 
     @RequestMapping(value = "/addStudent", method = RequestMethod.POST)
     public String addStudent(@ModelAttribute("HelloWeb") Student student, ModelMap model) {
-        if(student.getName() == "Ufuk" && student.getName() == "Ufuk" && student.getName() == "Ufuk" && student.getName() == "Ufuk"){
-            System.out.println("xxxx");
-        }
-        System.out.println("ok");
-        System.out.println("hello");
-        if(true)
-            return null;
-        model = null;
         model.addAttribute("name", student.getName());
         model.addAttribute("age", student.getAge());
         model.addAttribute("id", student.getId());
