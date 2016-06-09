@@ -3,7 +3,6 @@ package com.accenture;
 public class CalcNumber {
     private int number1;
     private int number2;
-    private int total;
 
     public int getNumber1() {
         return number1;
@@ -25,7 +24,4 @@ public class CalcNumber {
         return number1+number2;
     }
 
-    public void setTotal(int total) {
-        this.total = total;
-    }
 }
