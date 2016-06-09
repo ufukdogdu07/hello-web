@@ -20,7 +20,6 @@ public class StudentController {
         model.addAttribute("surname", student.getSurname());
         model.addAttribute("age", student.getAge());
         model.addAttribute("id", student.getId());
-        System.out.println("Ufuk");
         return "result";
     }
     
