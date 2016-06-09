@@ -22,7 +22,7 @@ public class CalcNumber {
     }
 
     public int getTotal() {
-        return total;
+        return number1+number2;
     }
 
     public void setTotal(int total) {
