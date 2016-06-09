@@ -5,19 +5,19 @@
 </head>
 <body>
 
-<h2>Submitted Student Information</h2>
+<h2>Result</h2>
    <table>
     <tr>
         <td>First Number</td>
-        <td>${name}</td>
+        <td>${number1}</td>
     </tr>
     <tr>
-        <td>Age</td>
-        <td>${age}</td>
+        <td>Second Number</td>
+        <td>${number2}</td>
     </tr>
     <tr>
-        <td>ID</td>
-        <td>${id}</td>
+        <td>Total</td>
+        <td>${total}</td>
     </tr>
 </table>  
 </body>
