@@ -9,12 +9,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class NumberController {
-    @RequestMapping(value = "/number", method = RequestMethod.GET)
+    @RequestMapping(value = "/calculate", method = RequestMethod.GET)
     public ModelAndView student() {
-        return new ModelAndView("number", "command", new CalcNumber());
+        return new ModelAndView("calculate", "command", new CalcNumber());
     }
 
-    @RequestMapping(value = "/addNumber", method = RequestMethod.POST)
+    @RequestMapping(value = "/addNumbers", method = RequestMethod.POST)
     public String addStudent(@ModelAttribute("HelloWeb") CalcNumber calcNumber, ModelMap model) {
         model.addAttribute("number1", calcNumber.getNumber1());
         model.addAttribute("number2", calcNumber.getNumber2());
