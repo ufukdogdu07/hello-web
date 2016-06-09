@@ -21,6 +21,8 @@ public class StudentController {
         }
         if(true)
             return null;
+        else 
+            return "";
         model = null;
         model.addAttribute("name", student.getName());
         model.addAttribute("age", student.getAge());
