@@ -1,8 +1,10 @@
-package com.accenture;
+package test.java;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import com.accenture.CalcNumber;
 
 public class CalculatorTest {
     @Test
