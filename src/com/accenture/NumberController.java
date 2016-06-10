@@ -19,6 +19,7 @@ public class NumberController {
         model.addAttribute("number1", calcNumber.getNumber1());
         model.addAttribute("number2", calcNumber.getNumber2());
         model.addAttribute("total", calcNumber.getTotal());
+        System.out.println(calcNumber.getTotal());
         return "total";
     }
 }
