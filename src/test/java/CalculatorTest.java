@@ -22,7 +22,7 @@ public class CalculatorTest {
         calculator.setNumber1(5);
         calculator.setNumber2(3);
         int sum = calculator.getTotal();
-        assertEquals(7, sum);
+        assertEquals(8, sum);
     }
 
     @Test
@@ -31,7 +31,7 @@ public class CalculatorTest {
         calculator.setNumber1(5);
         calculator.setNumber2(3);
         int sum = calculator.getTotal();
-        assertEquals(7, sum);
+        assertEquals(8, sum);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class CalculatorTest {
         calculator.setNumber1(5);
         calculator.setNumber2(3);
         int sum = calculator.getTotal();
-        assertEquals(7, sum);
+        assertEquals(8, sum);
     }
 
     @Test
@@ -49,7 +49,7 @@ public class CalculatorTest {
         calculator.setNumber1(5);
         calculator.setNumber2(3);
         int sum = calculator.getTotal();
-        assertEquals(7, sum);
+        assertEquals(8, sum);
     }
 
     @Test
