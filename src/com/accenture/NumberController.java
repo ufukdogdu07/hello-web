@@ -20,6 +20,7 @@ public class NumberController {
         model.addAttribute("number2", calcNumber.getNumber2());
         model.addAttribute("total", calcNumber.getTotal());
         System.out.println(calcNumber.getTotal());
+        System.out.println(calcNumber.getTotal());
         return "total";
     }
 }
