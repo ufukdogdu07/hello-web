@@ -15,10 +15,10 @@ public class NumberController {
     }
 
     @RequestMapping(value = "/addNumbers", method = RequestMethod.POST)
-    public String addStudent(@ModelAttribute("HelloWeb") CalcNumber calcNumber, ModelMap model) {
+    public String addNumbers(@ModelAttribute("HelloWeb") CalcNumber calcNumber, ModelMap model) {
         model.addAttribute("number1", calcNumber.getNumber1());
         model.addAttribute("number2", calcNumber.getNumber2());
-        model.addAttribute("total", calcNumber.getTotal()+calcNumber.getTotal());
+        model.addAttribute("total", calcNumber.getTotal());
         return "total";
     }
 }
