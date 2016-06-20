@@ -16,7 +16,7 @@
         <td>${number2}</td>
     </tr>
     <tr>
-        <td>Total</td>
+        <td>Totalx2</td>
         <td>${total}</td>
     </tr>
 </table>  

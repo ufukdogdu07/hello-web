@@ -18,9 +18,7 @@ public class NumberController {
     public String addStudent(@ModelAttribute("HelloWeb") CalcNumber calcNumber, ModelMap model) {
         model.addAttribute("number1", calcNumber.getNumber1());
         model.addAttribute("number2", calcNumber.getNumber2());
-        model.addAttribute("total", calcNumber.getTotal());
-        System.out.println(calcNumber.getTotal());
-        System.out.println(calcNumber.getTotal());
+        model.addAttribute("total", calcNumber.getTotal()+calcNumber.getTotal());
         return "total";
     }
 }
